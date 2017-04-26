@@ -1,0 +1,25 @@
+.row.justify-content-center
+  .box
+    .box__content
+      .box__content__header
+        .status-bar.row.align-items-start.no-gutters
+          img.col(src='./assets/status-bar-dark.svg')
+        .search.row.align-items-center.no-gutters
+          input(class="col-11",placeholder="Search")
+          img.profile-menu.col-1(src='./assets/user.svg', height='15')
+          img.icon(src='./assets/search.svg', height='10')
+      .box__content__status
+        .mind.row.align-items-center.no-gutters
+          img.icon(src='./assets/profil-pic@3x.jpg', height='29')
+          input(class="col-10",placeholder="What’s on your mind?")
+        .check-in.row.align-items-center.no-gutters
+          .col-4
+            img.icon(src='./assets/live.svg')
+            span Live
+          .col-4
+            img.icon(src='./assets/photo.svg')
+            span Photo
+          .col-4
+            img.icon(src='./assets/location.svg')
+            span Check In
+  

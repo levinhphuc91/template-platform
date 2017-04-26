@@ -1,0 +1,48 @@
+@import '_variable'
+
+.box
+  width: 315px
+  height: 546px
+  padding: 10px
+  margin-top: 15px
+  background-color: $background-box
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+  &__content
+    height: 100%
+    border: solid 1px $color-border
+    &__header
+      height: 43.7px
+      background-color: $background-header-fb
+      .status-bar
+        img
+          padding-top: 5px
+      .search
+        position: relative
+        padding: 0.3rem 0.3rem 0rem 0.3rem
+        input
+          padding-left: 1rem !important
+          border-radius: 3px
+          background-color: #293e6a
+          padding: 3px
+          border: none
+          color: #bfc5d2
+          font-size: 10px
+          letter-spacing: 0.1px
+          &::placeholder
+            color: #bfc5d2
+        .icon
+          left: 0.5rem
+          position: absolute
+        .profile-menu
+          padding-left: 5px
+    &__status
+      height: 73px
+      margin-top: 5px
+      background-color: $background-white
+      .mind
+        border-bottom: solid 0.5px #e9ebee
+        img
+          margin: 8.6px 0 8.6px 8.6px
+        input
+          border: none
+          padding-left: 5.2px

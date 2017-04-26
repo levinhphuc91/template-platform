@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Photo icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---result" transform="translate(-467.000000, -319.000000)">
+            <g id="1" transform="translate(330.000000, 164.000000)">
+                <g id="facebook" transform="translate(9.436747, 50.449111)">
+                    <g transform="translate(-2.051205, -1.899838)" id="Update-status">
+                        <g transform="translate(1.000000, 51.549007)">
+                            <g id="menu" transform="translate(34.000000, 52.000000)">
+                                <g id="photo" transform="translate(96.000000, 0.450993)">
+                                    <g id="Photo-icon" transform="translate(0.000000, 3.000000)">
+                                        <rect id="Rectangle-28" stroke="#89BE4C" fill="#FFFFFF" x="0" y="0" width="8" height="8" rx="1"></rect>
+                                        <polygon id="Path-39" fill="#89BE4C" points="0.188196098 5.62415653 2.8424961 3.91922592 3.93113017 4.87351316 6.89056067 2.4583997 7.75811485 3.58190583 7.69842998 7.17529244 7.79790476 7.57833294 5.56117528 7.87653373 0.819693277 7.69278481 0.441912664 7.64517105 0.0864859327 6.29812609"></polygon>
+                                        <circle id="Oval-9" fill="#89BE4C" cx="2" cy="2" r="1"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

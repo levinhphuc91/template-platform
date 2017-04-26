@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Check in icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lookout---result" transform="translate(-560.000000, -319.000000)">
+            <g id="1" transform="translate(330.000000, 164.000000)">
+                <g id="facebook" transform="translate(9.436747, 50.449111)">
+                    <g transform="translate(-2.051205, -1.899838)" id="Update-status">
+                        <g transform="translate(1.000000, 51.549007)">
+                            <g id="menu" transform="translate(34.000000, 52.000000)">
+                                <g id="check-in" transform="translate(188.000000, 0.450993)">
+                                    <g id="Check-in-icon" transform="translate(0.000000, 2.000000)">
+                                        <path d="M3.70565261,9.12389305 C3.70565261,9.12389305 0.182484597,6.07834791 0.182484597,4.47397986 C0.182484597,2.86961182 1.07694433,0.611802559 3.76051125,0.611802559 C6.44407818,0.611802559 7.32010883,3.13936459 7.32010883,4.4450505 C7.32010883,5.7507364 3.70565261,9.12389305 3.70565261,9.12389305 Z" id="Path-40" fill="#F5156F"></path>
+                                        <circle id="Oval-10" fill="#FFFFFF" cx="3.86445783" cy="4.00071477" r="1.25"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
