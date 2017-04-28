@@ -1,25 +1,27 @@
-.row.justify-content-center
-  .box
-    .box__content
-      .box__content__header
-        .status-bar.row.align-items-start.no-gutters
-          img.col(src='./assets/status-bar-dark.svg')
-        .search.row.align-items-center.no-gutters
-          input(class="col-11",placeholder="Search")
-          img.profile-menu.col-1(src='./assets/user.svg', height='15')
-          img.icon(src='./assets/search.svg', height='10')
-      .box__content__status
-        .mind.row.align-items-center.no-gutters
-          img.icon(src='./assets/profil-pic@3x.jpg', height='29')
-          input(class="col-10",placeholder="What’s on your mind?")
-        .check-in.row.align-items-center.no-gutters
-          .col-4
-            img.icon(src='./assets/live.svg')
-            span Live
-          .col-4
-            img.icon(src='./assets/photo.svg')
-            span Photo
-          .col-4
-            img.icon(src='./assets/location.svg')
-            span Check In
-  
+.container
+  .result-facebook
+    .result-facebook__header
+      .result-facebook__header-top
+        span.result-facebook__header-top__signal
+        span.result-facebook__header-top__time
+        span.result-facebook__header-top__battery
+      .result-facebook__header-search
+        .result-facebook__header-search__form
+          span.result-facebook__header-search__form__icon
+          input.result-facebook__header-search__form__input(type='text', placeholder='Search')
+        span.result-facebook__header-profile-menu
+    .result-facebook__create-post
+      .result-facebook__create-post__status
+        span.result-facebook__create-post__status__avatar
+        .result-facebook__create-post__status__form
+          input.result-facebook__create-post__status__form__input(type='text', placeholder="What's on your mind?")
+      .result-facebook__create-post__tools
+        span.result-facebook__create-post__tools__live Live
+        span.result-facebook__create-post__tools__photo Photo
+        span.result-facebook__create-post__tools__check-in Check In
+    .result-facebook__tabs
+      span.result-facebook__tabs__home
+      span.result-facebook__tabs__friend
+      span.result-facebook__tabs__chat
+      span.result-facebook__tabs__public-mode
+      span.result-facebook__tabs__menu

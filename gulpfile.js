@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create()
 
 var distPath = './dist'
 var htmlPath = './src/html'
-var fontsPath = './src/fonts'
+var fontsPath = './src/assets/fonts'
 var assetsPath = './src/assets'
 var sassPath = './src/sass'
 // Static server
@@ -34,7 +34,7 @@ gulp.task('clean', function () {
 
 gulp.task('copy-fonts', function () {
   gulp.src(fontsPath + '/**/*.{eot,svg,ttf,woff,oft}')
-      .pipe(gulp.dest('./dist/fonts'))
+      .pipe(gulp.dest('./dist/assets/fonts'))
       .pipe(browserSync.stream())
 })
 
