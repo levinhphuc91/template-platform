@@ -29,13 +29,16 @@
   display: flex
   align-content: center
   justify-content: center
-
-.result-facebook
+.box
   background: #fff
-  width: 295px
-  height: 546px
-  background-color: #f3f3f3
+  padding: 10px
+  width: 315px
   box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+.result-facebook
+  width: 295px
+  height: 535px
+  border: solid 1px #ebebeb
+  background-color: #f3f3f3
   position: relative
   border: solid 1.4px #ebebeb
 
@@ -138,7 +141,8 @@
       border-bottom: solid 0.5px #e9ebee
       &__avatar
         background: url($assets-path + '/facebook/avatar.png')
-        width: 15%
+        width: 26.5px
+        height: 28.5px
         background-size: contain
         background-position: left
         background-repeat: no-repeat
@@ -151,7 +155,7 @@
         display: flex
         &__input
           border: none
-          padding: 5px 0
+          padding: 5px 0 5px 7px
           display: flex
           align-content: center
           justify-content: center
@@ -175,12 +179,13 @@
       &__check-in
         @include tools-item($assets-path + '/facebook/location.png', 95%, center -1px)
   &__content-post
-    height: 305px
     width: 100%
-    padding-left: 0.5rem
-    padding-top: 0.5rem
+    padding-left: 1rem
+    padding-top: 1rem
+    margin-top: 0.5rem
     background-color: #ffffff
     &__header
+      padding-bottom: 0.5rem
       .infor-name
         position: absolute
         margin-top: -30px
@@ -200,17 +205,16 @@
       font-size: 10px
       line-height: 1.28
       color: #141823
-      margin-top: 3px
     &__image
       width: 275px
       margin-top: 10px
     &__title
       font-family: $font-SF-D-M
-      font-size: 10px
+      font-size: 11px
       font-weight: bolder
       line-height: 1.21
       color: #141823
-      padding: 0.5rem 2rem 0 1rem
+      padding: 1rem 2rem 0 1rem
       box-shadow: 1px 0 5px 0 #f2f2f2
       padding-bottom: 1rem
       .link
@@ -219,6 +223,18 @@
         text-align: left
         color: #9197a3
         font-weight: 100
+    &__tools
+      display: flex
+      flex-direction: row
+      width: 100%
+      padding-top: 1rem
+      color: #4b4f56
+      &__like
+        @include tools-item($assets-path + '/facebook/like.png', 100%, center 1px)
+      // &__comment
+      //   @include tools-item($assets-path + '/facebook/comment.png', 100%, center 1px)
+      &__share
+        @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
   &__tabs
     display: flex
     flex-direction: row

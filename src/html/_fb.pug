@@ -1,25 +1,25 @@
 .container
-  .result-facebook
-    .result-facebook__header
-      .result-facebook__header-top
-        span.result-facebook__header-top__signal
-        span.result-facebook__header-top__time
-        span.result-facebook__header-top__battery
-      .result-facebook__header-search
-        .result-facebook__header-search__form
-          span.result-facebook__header-search__form__icon
-          input.result-facebook__header-search__form__input(type='text', placeholder='Search')
-        span.result-facebook__header-profile-menu
-    .result-facebook__create-post
-      .result-facebook__create-post__status
-        span.result-facebook__create-post__status__avatar
-        .result-facebook__create-post__status__form
-          input.result-facebook__create-post__status__form__input(type='text', placeholder="What's on your mind?")
-      .result-facebook__create-post__tools
-        span.result-facebook__create-post__tools__live Live
-        span.result-facebook__create-post__tools__photo Photo
-        span.result-facebook__create-post__tools__check-in Check In
-    .result-facebook__content-post
+  .box
+    .result-facebook
+      .result-facebook__header
+        .result-facebook__header-top
+          span.result-facebook__header-top__signal
+          span.result-facebook__header-top__time
+          span.result-facebook__header-top__battery
+        .result-facebook__header-search
+          .result-facebook__header-search__form
+            span.result-facebook__header-search__form__icon
+            input.result-facebook__header-search__form__input(type='text', placeholder='Search')
+          span.result-facebook__header-profile-menu
+      .result-facebook__create-post
+        .result-facebook__create-post__status
+          span.result-facebook__create-post__status__avatar
+          .result-facebook__create-post__status__form
+            input.result-facebook__create-post__status__form__input(type='text', placeholder="What's on your mind?")
+        .result-facebook__create-post__tools
+          span.result-facebook__create-post__tools__live Live
+          span.result-facebook__create-post__tools__photo Photo
+          span.result-facebook__create-post__tools__check-in Check In
       .result-facebook__content-post
         .result-facebook__content-post__header
             img(src='./assets/facebook/avatar.png', width='26.5', height='28.5')
@@ -27,14 +27,23 @@
             .time Just now
               img(src='./assets/facebook/global.jpg')
         .result-facebook__content-post__status
-          span Yes, it is. It’s tiny. It’s easy. It’s doable. And it’s applicable 
-          span in most things you want to do or accomplish.
+          span Yes, it is. It’s tiny. It’s easy. It’s doable. And it’s applicable in most things you want to do or accomplish.
         img.result-facebook__content-post__image(src='./assets/facebook/imagetest.png')
         .result-facebook__content-post__title How to be 1% Better Every Day (The Kaizen Approach to Self-improvement) - The Mission
           .link medium.com
-    .result-facebook__tabs
-      span.result-facebook__tabs__home
-      span.result-facebook__tabs__friend
-      span.result-facebook__tabs__chat
-      span.result-facebook__tabs__public-mode
-      span.result-facebook__tabs__menu
+        .result-facebook__content-post__tools
+          span.result-facebook__content-post__tools__like Like
+          span.result-facebook__content-post__tools__comment Comment
+          span.result-facebook__content-post__tools__share Share
+      .result-facebook__content-post
+        .result-facebook__content-post__header
+            img(src='./assets/facebook/avatar.png', width='26.5', height='28.5')
+            .infor-name Tammy Olson
+            .time 3 hrs · Instagram ·
+              img(src='./assets/facebook/global.jpg')
+      .result-facebook__tabs
+        span.result-facebook__tabs__home
+        span.result-facebook__tabs__friend
+        span.result-facebook__tabs__chat
+        span.result-facebook__tabs__public-mode
+        span.result-facebook__tabs__menu
