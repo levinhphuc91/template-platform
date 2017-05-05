@@ -9,3 +9,46 @@ body
 
 .app-container
   min-height: calc(100vh - 40rem)
+.margin-b-0
+  margin-bottom: 0
+.margin-b-5
+  margin-bottom: 5px
+.color-grey
+  color: #acacac
+.header-common
+  display: flex
+  flex-direction: row
+  padding-bottom: 5px
+  padding-left: 5px
+  padding-top: 5px
+  .signal-common
+    background: url($assets-path + '/facebook/signal.png')
+    width: 20%
+    background-size: 100%
+    background-position: left
+    background-repeat: no-repeat
+    padding: 5px
+    display: flex
+    justify-content: flex-start
+
+  .time-common
+    background: url($assets-path + '/facebook/clock-now.png')
+    width: 60%
+    background-position: center
+    background-size: 30%
+    background-repeat: no-repeat
+    padding: 5px
+    display: flex
+    justify-content: center
+    align-content: center
+
+  .battery-common
+    background: url($assets-path + '/facebook/battery.png')
+    width: 20%
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: right
+    padding: 5px
+    display: flex
+    justify-content: flex-end
+    align-content: flex-end
