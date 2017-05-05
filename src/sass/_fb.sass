@@ -36,7 +36,7 @@
   box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
 .result-facebook
   width: 295px
-  height: 535px
+  height: 530px
   border: solid 1px #ebebeb
   background-color: #f3f3f3
   position: relative
@@ -48,6 +48,7 @@
     display: flex
     padding: 5px
     flex-direction: column
+    height: 43.7px
 
     &-top
       display: flex
@@ -55,7 +56,7 @@
       padding-bottom: 5px
       &__signal
         background: url($assets-path + '/facebook/signal.png')
-        width: 20%
+        width: 17%
         background-size: 100%
         background-position: left
         background-repeat: no-repeat
@@ -65,7 +66,7 @@
 
       &__time
         background: url($assets-path + '/facebook/clock-now.png')
-        width: 60%
+        width: 57%
         background-position: center
         background-size: 30%
         background-repeat: no-repeat
@@ -73,10 +74,11 @@
         display: flex
         justify-content: center
         align-content: center
+        margin: 0 6%
 
       &__battery
         background: url($assets-path + '/facebook/battery.png')
-        width: 20%
+        width: 17%
         background-size: 100%
         background-repeat: no-repeat
         background-position: right
@@ -87,7 +89,7 @@
 
     &-search
       display: flex
-      height: 2.7rem
+      height: 2.3rem
       flex-direction: row
       width: 100%
       &__form
@@ -114,8 +116,9 @@
           background: url($assets-path + '/facebook/search.png')
           width: 10%
           padding: 0
-          margin-right: -5px
-          background-size: 70%
+          margin-bottom: -2px
+          margin-right: -7px
+          background-size: 65%
           background-position: left
           background-repeat: no-repeat
 
@@ -140,9 +143,9 @@
       padding: 0.85rem
       border-bottom: solid 0.5px #e9ebee
       &__avatar
-        background: url($assets-path + '/facebook/avatar.png')
-        width: 26.5px
-        height: 28.5px
+        background: url($assets-path + '/facebook/avatar.jpg')
+        width: 29px
+        height: 29px
         background-size: contain
         background-position: left
         background-repeat: no-repeat
@@ -211,10 +214,11 @@
     &__title
       font-family: $font-SF-D-M
       font-size: 11px
-      font-weight: bolder
+      font-weight: 500
       line-height: 1.21
       color: #141823
-      padding: 1rem 2rem 0 1rem
+      padding: 1rem 0.5rem 0 1rem
+      margin-right: 0.8rem
       box-shadow: 1px 0 5px 0 #f2f2f2
       padding-bottom: 1rem
       .link
@@ -231,10 +235,32 @@
       color: #4b4f56
       &__like
         @include tools-item($assets-path + '/facebook/like.png', 100%, center 1px)
-      // &__comment
-      //   @include tools-item($assets-path + '/facebook/comment.png', 100%, center 1px)
+        border-right: none
+      &__comment
+        width: 33.3%
+        display: flex
+        justify-content: center
+        align-content: flex-start
+        font-size: 1rem
+        padding: 5px
+
+        &:last-child
+          border-right: none
+
+        &::before
+          content: ''
+          background: url($assets-path + '/facebook/comment.png')
+          width: 15%
+          background-size: 100%
+          background-position: center
+          background-repeat: no-repeat
+          margin: 0 3px
       &__share
         @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
+  &__content-second-post
+    padding-bottom: 0.7rem
+    .time, .infor-name
+      margin-left: 38.5px
   &__tabs
     display: flex
     flex-direction: row
