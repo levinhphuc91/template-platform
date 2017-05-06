@@ -123,7 +123,7 @@
           background-repeat: no-repeat
 
     &-profile-menu
-      background: url($assets-path + '/facebook/profile-menu.png')
+      background: url($assets-path + '/facebook/profile-menu.jpg')
       width: 10%
       background-size: 100%
       background-position: center
@@ -204,7 +204,7 @@
         font-size: 9px
         color: #9197a3
         img
-          width: 10px
+          width: 8px
           margin-left: 5px
     &__status
       font-size: 10px
@@ -212,17 +212,17 @@
       color: #141823
       letter-spacing: 0.2px
     &__image
-      width: 275px
+      width: 274px
       margin-top: 10px
     &__title
-      font-family: $font-SF-D-M
-      font-size: 11px
-      font-weight: 500
+      font-family: $font-SF-T-SB
+      font-size: 10px
+      font-weight: 600
       line-height: 1.21
       color: #141823
-      padding: 1rem 0.5rem 0 1rem
+      padding: 1rem 1rem 0 1rem
       margin-right: 0.8rem
-      box-shadow: 1px 0 5px 0 #f2f2f2
+      box-shadow: 1px 0 5px 0 #d5d5d5
       padding-bottom: 1rem
       position: relative
       .link
@@ -231,6 +231,7 @@
         text-align: left
         color: #9197a3
         font-weight: 100
+        font-family: $font-SF-T-R
       .border-bottom
         position: absolute
         height: 1px
@@ -243,12 +244,13 @@
       flex-direction: row
       width: 100%
       padding-top: 1rem
-      color: #4b4f56
+      color: #9197a3
       &__like
-        @include tools-item($assets-path + '/facebook/like.png', 100%, center 1px)
+        @include tools-item($assets-path + '/facebook/like.png', 100%, center 0px)
         margin: 0px
         padding: 5px
         border-right: none
+        font-size: 8.5px
       &__comment
         width: 33.3%
         display: flex
@@ -268,10 +270,12 @@
           background-position: center
           background-repeat: no-repeat
           margin: 0 3px
+        font-size: 8.5px
       &__share
         @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
         margin: 0px
         padding: 5px
+        font-size: 8.5px
   &__content-second-post
     padding-bottom: 0.7rem
     padding-top: 0.7rem
