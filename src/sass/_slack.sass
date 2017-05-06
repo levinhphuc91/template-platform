@@ -1,5 +1,5 @@
 .bold-lato
-  font-family: 'Lato-Bold'
+  font-family: $font-LT-B
 .link-color
   color: #0089cd
 .container-slack
@@ -50,6 +50,11 @@
       border: 1px solid #e4e4e4
       padding: 6px
       border-radius: 4px
+      .date
+        font-size: 8.6px
+        line-height: 1.45
+        letter-spacing: 0.1px
+        color: #acacac
     .profile-picture
       position: absolute
       top: 0
@@ -88,7 +93,11 @@
       border-radius: 4px
       padding: 0 5px
       height: 24px
-      font-size: 12px
+      font-size: 10px
+      letter-spacing: 0.1px
+      font-family: $font-LT-R
+      &::placeholder
+        color: #acacac
     .add-more-slack
       position: absolute
       text-align: center

@@ -5,7 +5,7 @@
     justify-content: center
     align-content: flex-start
     font-size: 1rem
-    padding: 5px
+    margin: 5px
 
     &:last-child
       border-right: none
@@ -17,7 +17,7 @@
       background-size: $size
       background-position: $postion
       background-repeat: no-repeat
-      margin: 0 3px
+      margin: 0px 3px
 
 @mixin tabs-item($file, $size, $position)
   width: 20%
@@ -36,7 +36,7 @@
   box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
 .result-facebook
   width: 295px
-  height: 530px
+  height: 525px
   border: solid 1px #ebebeb
   background-color: #f3f3f3
   position: relative
@@ -177,6 +177,8 @@
       color: #4b4f56
       &__live
         @include tools-item($assets-path + '/facebook/video.png', 100%, center 1px)
+        &::before
+          margin: 2px 3px
       &__photo
         @include tools-item($assets-path + '/facebook/photo.png', 100%, center 1px)
       &__check-in
@@ -208,6 +210,7 @@
       font-size: 10px
       line-height: 1.28
       color: #141823
+      letter-spacing: 0.2px
     &__image
       width: 275px
       margin-top: 10px
@@ -221,12 +224,20 @@
       margin-right: 0.8rem
       box-shadow: 1px 0 5px 0 #f2f2f2
       padding-bottom: 1rem
+      position: relative
       .link
         padding-top: 0.1rem
         font-size: 8.5px
         text-align: left
         color: #9197a3
         font-weight: 100
+      .border-bottom
+        position: absolute
+        height: 1px
+        width: 100%
+        background-color: #f3f5f5
+        bottom: -0.7rem
+        left: 0rem
     &__tools
       display: flex
       flex-direction: row
@@ -235,6 +246,8 @@
       color: #4b4f56
       &__like
         @include tools-item($assets-path + '/facebook/like.png', 100%, center 1px)
+        margin: 0px
+        padding: 5px
         border-right: none
       &__comment
         width: 33.3%
@@ -257,8 +270,11 @@
           margin: 0 3px
       &__share
         @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
+        margin: 0px
+        padding: 5px
   &__content-second-post
     padding-bottom: 0.7rem
+    padding-top: 0.7rem
     .time, .infor-name
       margin-left: 38.5px
   &__tabs
