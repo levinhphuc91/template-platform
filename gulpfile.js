@@ -33,7 +33,8 @@ gulp.task('clean', function () {
 })
 
 gulp.task('copy-fonts', function () {
-  gulp.src(fontsPath + '/**/*.{eot,svg,ttf,woff,oft}')
+  return gulp.src([
+    fontsPath + '/**/*.{eot,svg,woff2,woff,oft,ttf}'])
       .pipe(gulp.dest('./dist/assets/fonts'))
       .pipe(browserSync.stream())
 })
@@ -51,7 +52,7 @@ gulp.task('sass', function () {
 })
 
 gulp.task('copy-assets', function () {
-  gulp.src(assetsPath + '/**/*.{png,jpeg,jpg,gif,svg}')
+  return gulp.src(assetsPath + '/**/*.{png,jpeg,jpg,gif,svg}')
       .pipe(gulp.dest('./dist/assets'))
       .pipe(browserSync.stream())
 })
@@ -80,5 +81,5 @@ gulp.task('dev', function (done) {
 })
 
 gulp.task('build', function (done) {
-  runSequence('clean', 'copy-assets', 'copy-fonts', 'vendor', 'sass', 'pug', 'js', done)
+  runSequence('clean', 'copy-assets', 'copy-fonts', 'vendor', 'sass', 'pug', done)
 })
