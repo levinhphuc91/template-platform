@@ -6,6 +6,7 @@ body
   margin: 0
   font-size: 1.4rem
   background-color: #f6f7f8
+  line-height: 1.15
 
 .app-container
   min-height: calc(100vh - 40rem)
@@ -31,6 +32,52 @@ body
   font-size: 11px
 .font-12
   font-size: 12px
+.font-13
+  font-size: 13px
+.font-14
+  font-size: 14px
+
+.text
+  &-center
+    text-align: center
+  &-left
+    text-align: left
+  &-right
+    text-align: right
+  &-capitalize
+    text-transform: capitalize
+  &-uppercase
+    text-transform: uppercase
+
+.b-layout
+  &::after
+    clear: both
+    content: ' '
+    display: block
+  & > .layout-left
+    float: left
+  & > .layout-middle
+    overflow: hidden
+  & > .layout-right
+    float: right
+
+.display
+  &--inline
+    display: inline
+  &--inline-block
+    display: inline-block
+  &--block
+    display: block
+  &--flex
+    display: flex
+
+.center-item
+  display: table
+  height: 100%
+  & > .inner
+    display: table-cell
+    vertical-align: middle
+
 .header-common
   display: flex
   flex-direction: row
