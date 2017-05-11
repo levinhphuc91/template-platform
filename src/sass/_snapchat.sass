@@ -1,0 +1,97 @@
+.snapchat
+  background: $color-white
+  padding: 10px
+  width: 315px
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+  font-family: $font-SF-T-R
+  font-size: 12px
+  padding: 10px
+  &__container
+    border: solid 1px $color-border-search
+  &__header
+    height: 46px
+    border-bottom: solid 1px $color-border-search
+    &-actions
+      padding: 4px 10px 0
+      &__column
+        width: 33.3333%
+        p
+          margin-bottom: 0
+          font-weight: 500
+  &__body
+    padding: 5px 5px 0
+  &__time-chat
+    text-align: center
+    color: $color-grey-light
+    font-size: 7px
+    letter-spacing: 0.9px
+    margin-bottom: 0
+  &__footer
+    margin-top: 50px
+    border-top: 1px solid $color-grey-lightest
+    input
+      border: none
+      box-shadow: none
+      font-size: 11px
+      height: 30px
+      padding: 0 5px
+      width: 100%
+      outline: none
+      letter-spacing: 0.2px;
+      color: $color-grey-lighter-more;
+      &::-webkit-input-placeholder
+        color: $color-grey-lighter-more
+    &-actions
+      margin-bottom: 8px
+      &__item
+        width: 20%
+        .center-item
+          margin: 0 auto
+  .entry
+    margin-bottom: 7px
+    &__name
+      font-size: 8.5px
+      color: $color-blue
+      margin-bottom: 2px
+    &__message
+      padding: 2px 5px
+      border-left: 1.6px solid $color-blue
+      &__text
+        display: inline-block
+        font-size: 12.5px
+        letter-spacing: -0.3px
+      .attached-pic
+        border: 1px solid $color-grey-lighter
+        border-radius: 3px
+        overflow: hidden
+        margin: 7px 0
+        height: 44px
+        &__img
+          width: 44px
+          height: 44px
+          margin-right: 7px
+          img
+            width: 100%
+        &__info
+          height: 100%
+          &__title
+            font-size: 10px
+            font-weight: bold
+            margin-bottom: 3px
+            line-height: 1.49
+          &__desc
+            margin-bottom: 0
+            font-size: 7px
+            letter-spacing: 0.5px
+            color: $color-grey-dark
+    &.me
+      .entry
+        &__name
+          color: $color-pink
+        &__message
+          border-color: $color-pink
+    &:last-child
+      margin-bottom: 0;
+  .color
+    &-primary
+      color: $color-blue
