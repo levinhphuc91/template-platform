@@ -1,0 +1,255 @@
+.box
+  background: #fff
+  padding: 10px
+  width: 315px
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+
+.clearset
+  clear: both
+
+.result-imessage
+  width: 295px
+  height: 525px
+  border: solid 1px #ebebeb
+  position: relative
+
+  &__header
+    z-index: 10
+    width: 100%
+    display: flex
+    padding: 5px
+    flex-direction: column
+    height: 67px
+    position: absolute
+    -webkit-backdrop-filter: blur(7.8px);
+    backdrop-filter: blur(7.8px);
+    background-color: rgba(250, 250, 250, 0.75);
+    box-shadow: 0 1px 0 0 #b2b2b2;
+    &-top
+      display: flex
+      flex-direction: row
+      padding-bottom: 5px
+      &__status-bar
+        background: url($assets-path + '/imessage/status-bar-dark.png')
+        width: 100%
+        background-size: 100%
+        background-position: left
+        background-repeat: no-repeat
+        padding: 5px
+        display: flex
+    &-bottom
+      flex-direction: row
+      top: 12px
+      position: relative
+      &-left
+        float: left
+        flex-direction: column
+        width: 20%
+        &__back
+          margin-left: 10px
+          margin-top: 10px
+      &-center
+        float: left
+        flex-direction: column
+        width: 60%
+        text-align: center
+        &__profile
+          width: 30px
+          height: 30px
+        &__name
+          font-size: 8.5px;
+          letter-spacing: 0.1px;
+          text-align: center;
+          color: #030303;
+          margin-top: 2px
+      &-right
+        float: left
+        flex-direction: column
+        width: 20%
+        text-align: right
+        &__info
+          margin-right: 10px
+          margin-top: 10px
+  &__body
+    &-sent
+      margin-top: 5px
+      width: 213.8px
+      border-radius: 14.2px
+      background-color: #e5e6e9
+      padding: 5px 0px 10px 0px
+      line-height: 0.5
+      float: right
+      margin-right: 10px
+      &-status
+        font-size: 8.6px
+        font-weight: 500
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 0.1px
+        text-align: right
+        color: #8e8e93
+        margin-right: 20px
+      &-content
+        width: 194.6px
+        margin: auto
+        &-title
+          font-size: 8.5px
+          font-weight: bold
+          font-family: $font-SF-D-Bo
+          font-style: normal
+          font-stretch: normal
+          line-height: normal
+          letter-spacing: -0.1px
+          color: #1d291d
+        &-site
+          width: 194.6px
+          font-size: 8.5px
+          letter-spacing: -0.1px
+          color: #8e8e93
+          margin: auto
+          margin-top: 5px
+      img
+        width: 100%
+      &-blu
+        border-radius: 24.9px
+        background-color: #2292fd
+        margin-top: 5px
+        width: auto
+        font-size: 13px
+        letter-spacing: -0.2px
+        color: #ffffff
+        float: right
+        width: 136.5px
+        margin-right: 10px
+        padding: 5px
+        text-align: center
+      &-link
+        width: 107.6px
+        float: right
+        margin-right: 10px
+        border-radius: 14.2px
+        background-color: #e5e6e9
+        padding: 5px
+        padding-left: 10px
+        &-text
+          width: 70%
+          float: left
+          &-title
+            font-size: 8.5px
+            font-weight: bold
+            letter-spacing: -0.1px
+            color: #1d291d
+            font-family: $font-SF-D-Bo
+          &-subtitle
+            font-size: 8.5px
+            letter-spacing: -0.1px
+            color: #8e8e93
+        &-img
+          width: 30%
+          float: left
+          img
+            width: 26px
+            height: 26px
+    &-receive
+      padding: 5px 10px
+      line-height: 0.5px
+      width: 206px
+      border-radius: 10.7px
+      background-color: #e5e6e9
+      font-size: 13px
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: -0.6px
+      color: #1d291d
+      margin-top: 10px
+      margin-left: 10px
+      &-share
+        width: 206px
+        border-radius: 10.7px
+        background-color: #e5e6e9
+        margin-top: 5px
+        margin-left: 10px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: -0.6px
+        color: #1d291d
+        &-content
+          line-height: 0.8
+          width: 194px
+          margin: auto
+          padding-bottom: 5px
+          &-title
+            font-size: 8.5px
+            font-weight: bold
+            font-family: $font-SF-D-Bo
+            font-style: normal
+            font-stretch: normal
+            line-height: 0.5
+            letter-spacing: -0.1px
+            color: #1d291d
+          &-site
+            width: 194.6px
+            font-size: 8.5px
+            letter-spacing: -0.1px
+            color: #8e8e93
+            margin: auto
+            margin-top: 5px
+        img
+          width: 100%
+  &__footer
+    position: absolute
+    bottom: 0
+    width: 294.4px
+    height: 34.5px
+    padding-top: 5px
+    &-left
+      width: 47%
+      float: left
+      img
+        margin: 0px 10px
+      img:first-child
+        margin: 0px 5px 0px 15px
+    &-right
+      width: 48%
+      float: left
+      img.imessage-mic
+        position: absolute
+        top: 7px;
+        right: 17px;
+      .imessage-input-message
+        width: 142.1px
+        height: 26.7px
+        border-radius: 14.1px
+        background-color: #fafafa
+        border: solid 0.8px #c8c8cd
+        color: #c7c7cc
+        padding: 0px 8px
+.buble-msg-right
+  position: relative
+  &::after
+    content: ""
+    background-image: url($assets-path + '/imessage/buble-right.png')
+    background-size: 12px 15px;
+    position: absolute;
+    bottom: -2px;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+.buble-msg-left
+  position: relative
+  &::before
+    content: ""
+    background-image: url(./assets/imessage/buble-left.png)
+    background-size: 12px 15px
+    position: absolute
+    bottom: -6px
+    left: -4px
+    width: 15px
+    height: 15px
+    background-repeat: no-repeat

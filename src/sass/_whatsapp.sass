@@ -1,0 +1,281 @@
+@mixin floating-left
+  float: left
+
+@mixin time-messages
+  margin-right: 5px
+  text-align: right
+  font-size: 8.6px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: -0.2px
+  color: #9b9b9b
+
+@mixin contents
+  width: 215px
+  font-size: 12.5px
+  padding-left: 2px
+  padding-top: 3px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.13
+  letter-spacing: -0.5px
+
+@mixin title
+  font-family: $font-SF-D-Bo
+  color: #1d291d
+  width: 155px;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+
+@mixin textbox-contents
+  padding: 3px
+  width: 239px
+  margin-right: 12px
+  margin-top: 1px
+  border-radius: 7px
+
+
+.box
+  background: #fff
+  padding: 10px
+  width: 315px
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+
+.result-whatsapp
+  width: 295px
+  height: 525px
+  border: solid 1px #ebebeb
+  position: relative
+  background-color: rgba(236, 230, 218, 0.99)
+
+  &__header
+    width: 100%
+    background-color: #f7f7f7
+    display: flex
+    padding: 5px
+    flex-direction: column
+    height: 50px
+
+    &-top
+      display: flex
+      flex-direction: row
+      padding-bottom: 5px      
+      &__status-bar
+        background: url($assets-path + '/whatsapp/status-bar-dark.png')
+        width: 100%
+        background-size: 100%
+        background-position: left
+        background-repeat: no-repeat
+        padding: 5px
+        display: flex
+
+    &-bottom
+      margin-top: 3px
+      display: flex
+      flex-direction: row
+      &-left
+        width: 70%
+        flex-direction: column
+        &__back
+          background-size: 100%
+          background-position: center
+          width: 10px
+          height: 16px
+          margin-left: 5px
+
+        &__name
+          width: 76.3px
+          height: 13px
+          font-family: $font-SF-D-M
+          font-size: 11px
+          font-weight: 500
+          color: #161616
+          margin-left: 5px
+
+        &__profile
+          width: 26px
+          height: 26px
+          margin-left: 17px
+      &-right
+        width: 30%
+        flex-direction: column
+
+        &__video
+          background-size: 100%
+          background-position: center
+          width: 18px
+          height: 15px
+          object-fit: contain
+          float: right
+          margin-right: 20px
+          margin-top: 3px
+
+        &__phone
+          background-size: 100%
+          background-position: center
+          width: 14.9px
+          height: 14.9px
+          object-fit: contain
+          float: right
+          margin-right: 8px
+          margin-top: 4px
+
+  &__body
+    width: 100%
+    height: 437px
+    &-info
+      text-align: center
+      margin-top: 8px
+      margin-bottom: 5px
+      &-time
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 3.9px
+        height: 15px
+        width: 70px
+        font-size: 9.4px
+        color: #15313c
+        letter-spacing: -0.4px
+        display: block
+        margin: auto
+    &-textbox
+      width: 100%
+      &-right
+        float: right
+        background: #dcf8c6
+        @include textbox-contents
+        &-share
+          @include floating-left
+          background: #cfe9ba
+          padding-bottom: 1px
+          &-paragraph
+            @include floating-left
+            padding-left: 3px
+            width: 79%
+            line-height: 1.35
+            &-title
+              @include title
+            &-subtitle
+              font-size: 9.5px
+              color: #787878          
+            &-link
+              margin-top: 5px
+              font-size: 7px
+          &-image
+            @include floating-left
+            width: 20%            
+            img
+              width: 50px
+              height: 50px
+        &-content
+          @include contents
+          a
+            color: #2975d2
+        &-time
+          @include time-messages
+      &-left
+        float: left
+        background: #fbfbfb 
+        @include textbox-contents
+        margin-left: 10px
+        &-share
+          @include floating-left
+          background: #ebebeb
+          padding-bottom: 1px
+          &-paragraph
+            @include floating-left
+            padding-left: 3px
+            width: 79%
+            line-height: 1.35
+            &-title
+              @include title
+            &-subtitle
+              font-size: 9.5px
+              color: #787878          
+            &-link
+              margin-top: 5px
+              font-size: 7px
+          &-image
+            @include floating-left
+            width: 20%            
+            img
+              width: 50px
+              height: 50px
+        &-content
+          @include contents
+          a
+            color: #2975d2
+        &-time
+          @include time-messages
+  &__footer
+    background: #fff
+    width: 100%
+    height: 30px
+    flex-direction: row
+    padding: 5px 3px
+    position: absolute
+    bottom: 0px
+    &-left
+      @include floating-left
+      flex-direction: column
+      width: 79%
+      &__plus
+        width: 14px
+        height: 13px
+        margin: 0px 5px
+      &__write
+        border-radius: 25.1px
+        border: solid 0.8px #e2e2e2
+        width: 185px;
+        height: 21px;
+        margin-left: 4px;
+    &-right
+      @include floating-left
+      flex-direction: column
+      width: 21%
+      &__camera
+        width: 16.5px
+        height: 16.5px
+        object-fit: contain
+      &__divider
+        width: 2px;
+        height: 9px;
+        margin: 0px 12px;
+      &__mic
+        width: 11px
+        height: 19px
+        object-fit: contain
+
+.separate-message
+  margin-top: 8px
+  width: 180px
+.abduct-time
+  float: right
+  margin-top: -8px
+
+.wa-buble-right
+  position: relative
+  &::after
+    content: ""
+    background-image: url($assets-path + '/whatsapp/right-buble.png')
+    position: absolute
+    bottom: 4px
+    right: -9px
+    width: 15px
+    height: 15px
+    background-repeat: no-repeat
+.wa-buble-left
+  position: relative
+  &::before
+    content: ""
+    background-image: url(./assets/whatsapp/left-buble.png)
+    background-size: 12px 15px
+    position: absolute
+    background-repeat: no-repeat
+    bottom: 4px
+    left: -7px
+    width: 15px
+    height: 11px
