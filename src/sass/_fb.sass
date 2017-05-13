@@ -1,17 +1,17 @@
 @mixin tools-item($file, $size, $postion)
     width: 33.3%
     border-right: 1px solid #e9ebee
-    display: flex
-    justify-content: center
-    align-content: flex-start
     font-size: 1rem
-    margin: 5px
+    margin: 5px -1px
+    padding: 3px 5px 1px 5px
+    text-align: center
 
     &:last-child
       border-right: none
 
     &::before
       content: ''
+      padding: 0px 6px
       background: url($file)
       width: 15%
       background-size: $size
@@ -26,9 +26,6 @@
   background-position: $position
   background-repeat: no-repeat
   height: 31.3px
-  display: flex
-  align-content: center
-  justify-content: center
 .box
   background: #fff
   padding: 10px
@@ -45,69 +42,33 @@
   &__header
     width: 100%
     background-color: #3b5998
-    display: flex
     padding: 5px
-    flex-direction: column
     height: 43.7px
 
     &-top
-      display: flex
-      flex-direction: row
-      padding-bottom: 5px
-      &__signal
-        background: url($assets-path + '/facebook/signal.png')
-        width: 17%
-        background-size: 100%
-        background-position: left
-        background-repeat: no-repeat
-        padding: 5px
-        display: flex
-        justify-content: flex-start
-
-      &__time
-        background: url($assets-path + '/facebook/clock-now.png')
-        width: 57%
-        background-position: center
-        background-size: 30%
-        background-repeat: no-repeat
-        padding: 5px
-        display: flex
-        justify-content: center
-        align-content: center
-        margin: 0 6%
-
-      &__battery
-        background: url($assets-path + '/facebook/battery.png')
-        width: 17%
-        background-size: 100%
-        background-repeat: no-repeat
-        background-position: right
-        padding: 5px
-        display: flex
-        justify-content: flex-end
-        align-content: flex-end
+      height: 14px
+      img
+        margin-top: -10px
 
     &-search
-      display: flex
       height: 2.3rem
-      flex-direction: row
       width: 100%
       &__form
         width: 90%
         background-color: #293e6a
         border-radius: 3px
-        padding: 5px
-        flex-direction: row
-        display: flex
-        // justify-content: center
-        // align-content: center
+        padding: 5px 5px 0px 5px
+        margin-bottom: 3px
         &__input
           background-color: #293e6a
           border: none
           color: #bfc5d2
           font-size: 1rem
-          width: 80%
+          width: 70%
           letter-spacing: 0.1px
+          position: absolute
+          top: 23px
+          left: 25px
 
           &::placeholder
             color: #bfc5d2
@@ -121,26 +82,26 @@
           background-size: 65%
           background-position: left
           background-repeat: no-repeat
+          padding-left: 25px
+          padding-top: 5px
 
     &-profile-menu
       background: url($assets-path + '/facebook/person icon fb.png')
-      width: 6%
       background-size: 100%
       background-position: center
       background-repeat: no-repeat
       padding: 5px 10px
       margin-left: 5px
-      margin-top: -5px
-      display: flex
-      align-content: center
-      justify-content: center
+      margin-top: -4px
+      height: 20px
+      position: absolute
+      right: 10px
+      top: 22px
 
   &__create-post
     background: #fff
-    margin: 5px 0 7px 0
+    margin: 5px 0
     &__status
-      display: flex
-      flex-direction: row
       padding: 0.85rem
       border-bottom: solid 0.5px #e9ebee
       &__avatar
@@ -151,38 +112,38 @@
         background-position: left
         background-repeat: no-repeat
         padding: 5px
-        display: flex
-        justify-content: flex-start
 
       &__form
         width: 80%
-        display: flex
         &__input
           border: none
           padding: 5px 0 5px 7px
-          display: flex
-          align-content: center
-          justify-content: center
           font-size: 11px
           letter-spacing: 0.2px
           text-align: left
           color: #ebebeb
+          position: absolute
+          top: 61px
+          left: 37px
+          font-family: $font-SF-T-R
 
           &::placeholder
             color: #9197a3
 
     &__tools
-      display: flex
-      flex-direction: row
       width: 100%
       color: #4b4f56
+      height: 26.3px
       &__live
         @include tools-item($assets-path + '/facebook/video.png', 100%, center 1px)
+        float: left
         &::before
           margin: 2px 3px
       &__photo
+        float: left
         @include tools-item($assets-path + '/facebook/photo.png', 100%, center 1px)
       &__check-in
+        float: left
         @include tools-item($assets-path + '/facebook/location.png', 95%, center -1px)
   &__content-post
     width: 100%
@@ -194,13 +155,13 @@
       padding-bottom: 0.5rem
       .infor-name
         position: absolute
-        margin-top: -30px
+        margin-top: -28px
         margin-left: 35px
         font-size: 10px
         font-weight: bolder
       .time
         position: absolute
-        margin-top: -17px
+        margin-top: -13px
         margin-left: 35px
         font-size: 9px
         color: #9197a3
@@ -241,24 +202,21 @@
         bottom: -0.7rem
         left: 0rem
     &__tools
-      display: flex
-      flex-direction: row
       width: 100%
       padding-top: 1rem
       color: #9197a3
       &__like
         @include tools-item($assets-path + '/facebook/like.png', 100%, center 0px)
-        margin: 0px
+        margin: 4px 0 3px 0px
         padding: 5px
         border-right: none
         font-size: 8.5px
       &__comment
         width: 33.3%
-        display: flex
-        justify-content: center
-        align-content: flex-start
+        text-align: center
         font-size: 1rem
         padding: 5px
+        margin: 5px 0 3px 0px
 
         &:last-child
           border-right: none
@@ -266,40 +224,44 @@
         &::before
           content: ''
           background: url($assets-path + '/facebook/comment.png')
-          width: 15%
+          height: 10px
           background-size: 100%
           background-position: center
           background-repeat: no-repeat
-          margin: 0 3px
+          margin: -2px 3px
+          padding: 0px 6px
+
         font-size: 8.5px
       &__share
         @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
         margin: 0px
         padding: 5px
         font-size: 8.5px
+        margin: 5px 0 3px 0px
   &__content-second-post
     padding-bottom: 0.7rem
     padding-top: 0.7rem
     .time, .infor-name
       margin-left: 38.5px
   &__tabs
-    display: flex
-    flex-direction: row
     background: #fff
-    justify-content: center
-    align-content: center
     position: absolute
     bottom: 0
     left: 0
     width: 100%
     border-top: solid 1px #ebebeb
     &__home
+      float: left
       @include tabs-item($assets-path + '/facebook/tab-home.png', 60%, center 4px)
     &__friend
+      float: left
       @include tabs-item($assets-path + '/facebook/tab-friend.png', 50%, center 4px)
     &__chat
+      float: left
       @include tabs-item($assets-path + '/facebook/tab-chat.png', 35%, center)
     &__public-mode
+      float: left
       @include tabs-item($assets-path + '/facebook/public-mode.png', 35%, center)
     &__menu
+      float: left
       @include tabs-item($assets-path + '/facebook/tab-menu.png', 35%, center)
