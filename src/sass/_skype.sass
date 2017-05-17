@@ -1,0 +1,183 @@
+.skype
+  background: $color-white
+  padding: 10px
+  width: 315px
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+  font-family: $font-SF-T-R
+  font-size: 10px
+  padding: 10px
+  &__container
+    border: solid 1px $color-border-search
+  &__header
+    height: 46px
+    background: #f7f8fa
+    &-actions
+      padding: 3px 10px 0
+      &__column
+        width: 33.3333%
+    &__name
+      margin-bottom: 0
+      font-weight: bold
+      color: #0b7cb2
+      margin-left: 8px
+      position: relative
+      img
+        position: absolute
+        left: 0
+        top: 2px
+    &__status
+      font-size: 8.5px
+      letter-spacing: -0.3px
+      color: #6d717a
+    &__vcall
+      margin-right: 16.5px
+    &__call
+      margin-right: 6px
+
+  &__time-chat
+    font-size: 8.5px
+    font-weight: bold
+    color: #636c7d
+    margin-top: 17px
+    margin-bottom: 16px
+  &__entries
+    padding-left: 10px
+    .skype
+      &__time-chat
+        clear: both
+        padding-top: 12px
+        margin-bottom: 12px
+  .entry
+    position: relative
+    padding-left: 36px
+    max-width: 202px
+    &__img
+      position: absolute
+      top: 0
+      left: 0
+    &__message
+      -webkit-border-radius: 4px
+      -moz-border-radius: 4px
+      background: #f0f4f7
+      border-radius: 4px
+      display: inline-block
+      padding: 10.2px 15.2px
+      position: relative
+      word-break: break-all
+      font-size: 11px
+      line-height: 1.35
+      letter-spacing: -0.1px
+      color: #343539
+      margin-bottom: 4px
+      &::before
+        position: absolute
+        width: 4.6px
+        height: 8.9px
+        top: 10px
+        left: -1px
+        content: ''
+        background-color: #f0f4f7
+        -ms-transform: rotate(-45deg)
+        -webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+      &__text
+        &--link
+          color: #498ec1
+      &--attached
+        padding: 0
+        overflow: hidden
+        &::before
+          display: none
+    &.me
+      float: right
+      padding-left: 0
+      padding-right: 10px
+      margin-top: 4px
+      max-width: 260px
+      .entry 
+        &__message
+          background: #dbf4fd
+          &::before
+            left: auto
+            right: -1px
+            background: #dbf4fd
+          &__pic
+            width: 100%
+            max-width: 100%
+            position: relative
+            > img
+              width: 100%
+            &__overlay
+              position: absolute
+              top: 0
+              left: 0
+              bottom: 0
+              right: 0
+              background: rgba(0, 0, 0, 0.4)
+            &__title
+              position: absolute
+              z-index: 1
+              bottom: 15px
+              color: #ffffff
+              font-size: 10px
+              line-height: 1.33
+              letter-spacing: -0.3px
+              padding: 0 8px
+              opacity: .8
+            &__link
+              position: absolute
+              bottom: 4px
+              margin-bottom: 0
+              padding: 0 8px
+              font-size: 8.5px
+              letter-spacing: -0.2px
+              color: #9fadb6
+          &__status
+            text-align: right;
+            font-size: 7px;
+            letter-spacing: -0.2px;
+            color: #636f7d;
+            img
+              width: 9px;
+              height: 8px;
+              vertical-align: -1px;
+              margin-left: 2px;
+  &__footer
+    margin: 20px 10px 10px;
+    border-top: solid 0.5px #e5e6ea;
+    position: relative
+    input
+      border: none
+      box-shadow: none
+      font-size: 11px
+      height: 40px
+      width: 100%
+      outline: none
+      letter-spacing: -0.2px;
+      color: #636c7d;
+      &::-webkit-input-placeholder
+        color: #636c7d;
+    .icon-smiley
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    &-actions
+      height: 28px
+      &__item
+        height: 100%
+        margin-right: 21px
+        .icon-pic
+          width: 16px;
+          height: 15px;
+        .icon-camera
+          width: 15px;
+          height: 13px;
+        .icon-video
+          width: 15px;
+          height: 13px;
+        .icon-localtion
+          width: 14.9px;
+          height: 14.9px;
+        .icon-card
+          width: 16px;
+          height: 10px;
