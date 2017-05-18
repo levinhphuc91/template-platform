@@ -1,5 +1,5 @@
 .container
-    .container-slack
+    .container-slack-small-thumbnail
         .widget-slack
             .header-slack
                 .header-common
@@ -27,7 +27,25 @@
                     p This is the unoptimized link
                         span.link-color  http://kenny.is/cool
 
-            .row-post-slack
+            .row-post-slack.second-post
+                .profile-picture.text-right
+                    img(src='assets/slack/profil-pic-2@3x.png' width='26')
+                .user-post-slack
+                    p.info-user-posted.margin-b-0
+                        span.bold-lato.text-capitalize edwords
+                        span.time 5:52 PM
+                    p.margin-b-0 I found this article, check this out..
+                    p.link-color.margin-b-5 https://blog.google/topics/environment/100-percent-renewable-energy/
+                    .share-slack
+                        img.img-left-side(src='assets/slack/pic@3x.png' width='37' height='23')
+                        p.margin-b-0
+                            span
+                                img(src='assets/slack/writer-logo@3x.png' width='13')
+                            span.text-capitalize Google
+                        p.title.bold-lato.link-color.margin-b-0 We’re set to reach 100% renewable energy — and it’s just the beginning 
+                        p.desc.margin-b-0 In 2017, Google will reach 100%renewable energy for our global operations — both data centers and offices. To reach this goal we’ll be directly buying enough wind and solar electricity annually to account for every unit of electricity our operations consume.                        
+                        p.margin-b-5.color-grey.date Dec 6th, 2016 at 4:00 pm
+            .row-post-slack.third-post.overflow-h
                 .profile-picture.text-right
                     img(src='assets/slack/profil-pic-2@3x.png' width='26')
                 .user-post-slack
@@ -43,14 +61,18 @@
                             span.text-capitalize medium
                         p.bold-lato.link-color.margin-b-0.text-capitalize how to be 1% better  every day (the kaizen approach to self-improvement) - the mission
                         p.margin-b-0 "Compounding is the greatest mathematical discovery of all time" - Albert Einstein
-                        p.margin-b-0.bold-lato Reading time
-                        p.margin-b-0 5 min read
-                        p.margin-b-5.color-grey.date Dec 9th, 2016 at 12:03 am
-                        .div
-                            img(src='assets/slack/image@3x.png' width='100%')
 
             .footer-slack
-                .add-more-slack
-                    span
-                        img(src='assets/slack/plus-icon.svg')
-                input(type='text' placeholder='Message @edwordss')
+                span.mess Message yourself
+                span.float-r
+                    img(src='assets/slack/icon-5-resize.svg' width='11' height='12')
+                .margin-t-5.padding-t-5
+                  span
+                      img(src='assets/slack/icon-1-mention.svg' width='15' height='14')
+                  span.middle-image
+                      img(src='assets/slack/icon-2-command.svg' width='13' height='13')
+                  span
+                      img(src='assets/slack/icon-3-attach-file.svg' width='13' height='14')
+                  span.send.float-r Send
+                  span.float-r.middle-image
+                      img(src='assets/slack/icon-4-image.svg' width='17' height='14')

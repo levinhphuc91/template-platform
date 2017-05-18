@@ -1,0 +1,287 @@
+@mixin tools-item($file, $size, $postion)
+    width: 33.3%
+    border-right: 1px solid #e9ebee
+    font-size: 1rem
+    margin: 5px -1px
+    padding: 3px 5px 1px 5px
+    text-align: center
+
+    &:last-child
+      border-right: none
+
+    &::before
+      content: ''
+      padding: 0px 6px
+      background: url($file)
+      width: 15%
+      background-size: $size
+      background-position: $postion
+      background-repeat: no-repeat
+      margin: 0px 3px
+
+@mixin tabs-item($file, $size, $position)
+  width: 58.44px
+  background: url($file)
+  background-size: $size
+  background-position: $position
+  background-repeat: no-repeat
+  height: 31.3px
+.box-unoptimized-link
+  background: #fff
+  padding: 10px
+  width: 315px
+  box-shadow: 0 9px 10px 0 rgba(226, 226, 226, 0.5)
+  .result-facebook
+    width: 295px
+    height: 525px
+    border: solid 1px #ebebeb
+    background-color: #f3f3f3
+    position: relative
+    border: solid 1.4px #ebebeb
+
+    &__header
+      width: 100%
+      background-color: #3b5998
+      padding: 5px
+      height: 43.7px
+
+      &-top
+        height: 14px
+        img
+          margin-top: -10px
+
+      &-search
+        height: 2.3rem
+        width: 100%
+        &__form
+          width: 90%
+          background-color: #293e6a
+          border-radius: 3px
+          padding: 5px 5px 0px 5px
+          margin-bottom: 3px
+          &__input
+            background-color: #293e6a
+            border: none
+            color: #bfc5d2
+            font-size: 1rem
+            width: 70%
+            letter-spacing: 0.1px
+            position: absolute
+            top: 23px
+            left: 25px
+
+            &::placeholder
+              color: #bfc5d2
+              font-size: 1rem
+          &__icon
+            background: url($assets-path + '/facebook/search.png')
+            width: 25px
+            padding: 0
+            margin-bottom: -2px
+            margin-right: -7px
+            background-size: 65%
+            background-position: left
+            background-repeat: no-repeat
+            padding-left: 25px
+            padding-top: 5px
+
+      &-profile-menu
+        background: url($assets-path + '/facebook/person icon fb.png')
+        background-size: 100%
+        background-position: center
+        background-repeat: no-repeat
+        padding: 5px 10px
+        margin-left: 5px
+        margin-top: -4px
+        height: 20px
+        position: absolute
+        right: 10px
+        top: 22px
+
+    &__create-post
+      background: #fff
+      margin: 5px 0
+      &__status
+        padding: 0.85rem
+        border-bottom: solid 0.5px #e9ebee
+        &__avatar
+          background: url($assets-path + '/facebook/avatar.jpg')
+          width: 29px
+          height: 29px
+          background-size: contain
+          background-position: left
+          background-repeat: no-repeat
+          padding: 5px
+
+        &__form
+          width: 80%
+          &__input
+            border: none
+            padding: 5px 0 5px 7px
+            font-size: 11px
+            letter-spacing: 0.2px
+            text-align: left
+            color: #ebebeb
+            position: absolute
+            top: 61px
+            left: 37px
+            font-family: $font-SF-T-R
+
+            &::placeholder
+              color: #9197a3
+
+      &__tools
+        width: 100%
+        color: #4b4f56
+        height: 26.3px
+        &__live
+          @include tools-item($assets-path + '/facebook/video.png', 100%, center 1px)
+          float: left
+          &::before
+            margin: 2px 3px
+        &__photo
+          float: left
+          @include tools-item($assets-path + '/facebook/photo.png', 100%, center 1px)
+        &__check-in
+          float: left
+          @include tools-item($assets-path + '/facebook/location.png', 95%, center -1px)
+    &__content-post
+      width: 100%
+      padding-left: 1rem
+      padding-top: 1rem
+      margin-top: 0.5rem
+      background-color: #ffffff
+      &__header
+        padding-bottom: 0.5rem
+        .infor-name
+          position: absolute
+          margin-top: -28px
+          margin-left: 35px
+          font-size: 10px
+          font-weight: bolder
+        .time
+          position: absolute
+          margin-top: -13px
+          margin-left: 35px
+          font-size: 9px
+          color: #9197a3
+          img
+            width: 8px
+            margin-left: 5px
+      &__unoptimized-link
+        font-size: 17px
+        font-family: $font-SF-D-R
+        letter-spacing: -0.6px
+        color: $color-unoptimized-link
+        width: 188px
+        padding-top: 5px
+        position: relative
+        padding-bottom: 5px
+        .border-bottom
+          position: absolute
+          height: 1px
+          width: 275px
+          background-color: #f3f5f5
+          bottom: -0.7rem
+          left: 0rem
+      &__status
+        font-size: 10px
+        line-height: 1.28
+        color: #141823
+        letter-spacing: 0.2px
+      &__image
+        width: 274px
+        margin-top: 10px
+      &__title
+        font-family: $font-SF-T-SB
+        font-size: 10px
+        font-weight: 600
+        line-height: 1.21
+        color: #141823
+        padding: 1rem 1rem 0 1rem
+        margin-right: 0.8rem
+        box-shadow: 1px 0 5px 0 #d5d5d5
+        padding-bottom: 1rem
+        position: relative
+        .link
+          padding-top: 0.1rem
+          font-size: 8.5px
+          text-align: left
+          color: #9197a3
+          font-weight: 100
+          font-family: $font-SF-T-R
+        .border-bottom
+          position: absolute
+          height: 1px
+          width: 100%
+          background-color: #f3f5f5
+          bottom: -0.7rem
+          left: 0rem
+      &__tools
+        width: 100%
+        padding-top: 1rem
+        color: #9197a3
+        &__like
+          @include tools-item($assets-path + '/facebook/like.png', 100%, center 0px)
+          margin: 4px 0 3px 0px
+          padding: 5px
+          border-right: none
+          font-size: 8.5px
+          width: 93.97px
+        &__comment
+          width: 93.97px
+          text-align: center
+          font-size: 1rem
+          padding: 5px
+          margin: 5px 0 3px 0px
+
+          &:last-child
+            border-right: none
+
+          &::before
+            content: ''
+            background: url($assets-path + '/facebook/comment.png')
+            height: 10px
+            background-size: 100%
+            background-position: center
+            background-repeat: no-repeat
+            margin: -2px 3px
+            padding: 0px 6px
+
+          font-size: 8.5px
+        &__share
+          @include tools-item($assets-path + '/facebook/share.png', 95%, center -1px)
+          margin: 0px
+          padding: 5px
+          font-size: 8.5px
+          margin: 5px 0 3px 0px
+          width: 93.97px
+    &__content-second-post
+      padding-bottom: 0.7rem
+      padding-top: 0.7rem
+      .time, .infor-name
+        margin-left: 38.5px
+    &__tabs
+      background: #fff
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      border-top: solid 1px #ebebeb
+      &__home
+        float: left
+        @include tabs-item($assets-path + '/facebook/tab-home.png', 60%, center 4px)
+      &__friend
+        float: left
+        @include tabs-item($assets-path + '/facebook/tab-friend.png', 50%, center 4px)
+      &__chat
+        float: left
+        @include tabs-item($assets-path + '/facebook/tab-chat.png', 35%, center)
+      &__public-mode
+        float: left
+        @include tabs-item($assets-path + '/facebook/public-mode.png', 35%, center)
+      &__menu
+        float: left
+        @include tabs-item($assets-path + '/facebook/tab-menu.png', 35%, center)
+.height-second-post
+  height: 231px
